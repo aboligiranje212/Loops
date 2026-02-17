@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Loop Programs (Console Output)</title>
+</head>
+<body>
+
+    <script>
+        
+        console.log("1. Write a program that uses a loop to calculate the sum of numbers from 1 to 50.");
+            let sum = 0;
+            for (let i = 1; i <= 50; i++) {
+                sum += i;
+            }
+            console.log("Sum from 1 to 50 is:", sum);
+
+            console.log("*********************************************");
+
+            console.log("2. Using a loop, print the multiplication table of a user given number (e.g., 7) up to 10.");
+
+            let tableNumber = parseInt(prompt("Enter a number for multiplication table:"));
+            console.log("Multiplication Table of", tableNumber);
+            for (let i = 1; i <= 10; i++) {
+                console.log(tableNumber + " x " + i + " = " + (tableNumber * i));
+            }
+
+            console.log("********************************");
+
+            console.log("3. Using a loop, count how many even numbers exist between 1 and a user given number and display the count.");
+           
+            let evenLimit = parseInt(prompt("Enter a number to count even numbers:"));
+            let evenCount = 0;
+            for (let i = 1; i <= evenLimit; i++) {
+                if (i % 2 === 0) {
+                    evenCount++;
+                }
+            }
+            console.log("Total even numbers between 1 and", evenLimit, "is:", evenCount);
+
+            console.log("********************************");
+
+            console.log("Using a loop, find the factorial of a user given number (e.g., 6).");
+
+            let factNumber = parseInt(prompt("Enter a number to find factorial:"));
+            let factorial = 1;
+            for (let i = 1; i <= factNumber; i++) {
+                factorial *= i;
+            }
+            console.log("Factorial of", factNumber, "is:", factorial);
+
+            console.log("********************************");
+
+            console.log("Write a program that starts from a user given number (e.g., 20) and counts down to 1, printing each number.");
+            
+            let startNumber = parseInt(prompt("Enter a number to start countdown:"));
+            console.log("Countdown from", startNumber);
+            for (let i = startNumber; i >= 1; i--) {
+                console.log(i);
+            }
+        
+    </script>
+
+</body>
+</html>
